@@ -8,3 +8,10 @@ function toggleTheme() {
     }
   }
   
+  function toggleMenu() {
+    var menu = document.querySelector('nav .menu');
+    // menu.style.display = 'flex';
+    menu.classList.toggle('show');
+}
+
+ 

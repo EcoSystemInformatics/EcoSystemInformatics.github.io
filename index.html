@@ -5,20 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Company</title>
 <link rel="stylesheet" id="theme-style" href="light-mode.css">
+<link rel="stylesheet" id="theme-style" href="slider.css">
+<link rel="stylesheet" id="theme-style" href="menubar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
-<body>
+<body style="margin: 0%;">
 
 <nav>
-  <ul>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    <img src="long_logo.png" alt="ESI Logo" class="logo" width="50%"> <!-- Logo placeholder -->
+    <div class="menu-toggle" onclick="toggleMenu()" style="color: aliceblue;">☰</div>
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li>
+        <a href="#who-we-help" id="item1" >Who We Help</a>
+        <ul class="submenu" style="width: 200%;">
+          <li><a href="#governing-bodies">Governing Bodies</a></li>
+          <li><a href="#industrial">Industrial</a></li>
+        </ul>
+      </li>
+      <li><a href="#blog">Blog</a></li>
+      <li>
+        <a href="#platform" id="item2">Platform</a>
+        <ul class="submenu">
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#performance-benchmarking">Performance Benchmarking</a></li>
+        </ul>
+      </li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#" class="fa fa-twitter"></a></li>
+      <li><a href="#" class="fa fa-linkedin"></a></li>
+      <li><a href="https://dash.ecosinfo.ca" class="login-button">Login</a></li> <!-- Login button -->
+    </ul>
+      <!-- <div class="theme-toggle">
+    <span>Light Mode</span>
+    <label class="switch">
+      <input type="checkbox" onclick="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div> -->
 </nav>
 
-<header id="hero">
-  <img src="hero-image.jpg" alt="Hero Image">
+<header id="hero" style="margin: 0%;">
+  <img src="hero-image.png" alt="Hero Image" width="100%" height="100%">
   <h1>Ecosystem Informatics Inc.</h1>
 </header>
 
