@@ -30,7 +30,7 @@ nav {
     color: white;
     text-decoration: none;
     padding: 5%;
-    width:200%;
+    width: 200%;
   }
 
    
@@ -46,6 +46,19 @@ nav {
   nav .submenu {
     width: 300%;
     padding: 10%;
+    z-index: 1100;
+  }
+
+  #item1 {
+    width: 200% !important;
+  }
+
+  #item2 {
+    width: 300% !important;
+  }
+
+  #item2 > li {
+    width: 200% !important;
   }
 
   nav .submenu > li {
@@ -88,14 +101,13 @@ nav {
 
 
 /* Styles for mobile view */
-/* Styles for mobile view */
 @media (max-width: 768px) {
     nav .menu {
         position: fixed;
         top: 4%;
-        left: 0;
+        left: 0%;
         width: 100%;
-        height: 100%;
+        height: 96%;
         background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
         flex-direction: column;
         justify-content: center;
@@ -106,37 +118,65 @@ nav {
     
     nav .menu-toggle {
         display: block;
-        cursor: pointer;
-        
+        cursor: pointer;   
     }
     
     nav .menu.show {
         display: flex;
     }
 
-    nav .menu > li {
+    nav .menu.show > li {
         width: 100%;
         text-align: center;
-        padding: 5%;
         cursor: pointer;
     }
 
-    nav .menu .submenu {
+    nav .menu.show .submenu {
         display: none;
         z-index: 1100;
-        text-align: left;
-        padding: 2%;
+        text-align: center;
         background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
 
     }
 
     nav .submenu > li{
-        padding: 2%;
+        padding: 1%;
+        width: 100%;
     }
+    
 
-
-    nav .menu > li.open.submenu {
+    /* nav .menu.show > li.open.submenu {
         display: block;
+        width: 80%; */
         /* padding-left: 20px; Indentation for submenu items */
+    /* } */
+
+    #item1 {
+        width: 100% !important;
+        padding: 0%;
+        margin: 0%;
     }
+
+    #item1 > li {
+        width: 100% !important;
+        padding: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+    }
+
+    #item2 {
+        width: 100% !important;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #item2 > li {
+        width: 100% !important;
+        padding: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+
+    }
+
 }
